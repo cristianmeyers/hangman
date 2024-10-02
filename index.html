@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Ahorcado</h1>
+        <div class="level-selection">
+            <label for="level">Choisissez un niveau de difficulté:</label>
+            <select id="level">
+                <option value="easy">Facile</option>
+                <option value="medium">Moyen</option>
+                <option value="hard">Difficile</option>
+            </select>
+        </div>
+        <div class="language-selection">
+            <label for="language">Choisissez une langue:</label>
+            <select id="language">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
+            <button id="startGame">Démarrer le jeu</button>
+        </div>
+        <p id="wordDisplay"></p>
+        <p>Erreurs: <span id="wrongLetters"></span></p>
+        <p>Essais restants: <span id="attempts"></span></p>
+        <input type="text" id="letterInput" maxlength="1" placeholder="Entrez une lettre" />
+        <button id="submitLetter">Deviner</button>
+        <p id="message"></p>
+        <button id="restartButton" style="display: none;">Recommencer le jeu</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
